@@ -1,0 +1,169 @@
+.header {
+  z-index: 1;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  border-color: rgba(128, 128, 128, 0.365);
+  border-style: solid;
+  background-color: rgb(246, 251, 255);
+  border-width: 1px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hamburger-menu{
+  cursor: pointer;
+  height: 30px;
+  margin: 0 30px;
+}
+.logo{
+  cursor: pointer;
+  height: 28px;
+  
+}
+.middle-section {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  flex: 1;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 30px;
+}
+input{
+  height: 45px;
+  padding-left: 15px;
+  flex: 1;
+  font-size: 19px;
+  width: 0;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.092) ;
+  outline-color: rgb(0, 128, 255);
+  border-color: rgba(128, 128, 128, 0.377);
+}
+input::placeholder{
+  opacity: .8;
+}
+.button1{
+  cursor: pointer;
+  height: 49px;
+  width: 80px;
+  border-style: solid;
+  border-width: 1px;
+  border-left: 0;
+  align-self: center;
+  border-color: rgba(128, 128, 128, 0.401);
+  margin-left: -0.3px;
+  position: relative;
+}
+.sicon{
+  height: 30px;
+  vertical-align: middle;
+}
+.button2{
+  cursor: pointer;
+  margin-left: 10px;
+  height: 49px;
+  width: 49px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(128, 128, 128, 0.092);
+}
+.button1 div,.button2 div{
+  position: absolute;
+  color: white;
+  background-color: rgb(113, 113, 113);
+  padding: 10px 10px;
+  font-size: 15px;
+  bottom: -50px ;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.button1:hover div,.button2:hover div{
+  opacity: 1;
+}
+.mic{
+  height: 30px;
+  vertical-align: middle;
+}
+button:hover{
+background-color: rgba(128, 128, 128, 0.244);
+}
+.right-section {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.create{
+  cursor: pointer;
+  height: 30px;
+
+}
+.menu{
+  cursor: pointer;
+  height: 30px;
+}
+.bellicon{
+  position: relative;
+}
+.noti{
+  background-color: rgba(176, 27, 27, 0.912);
+  font-size: 10px;
+  padding: 2px 5px;
+  color:aliceblue;
+  border-radius: 10px;
+  position:absolute;
+  top: -1px;
+  right: -2px;
+}
+.bell{
+  cursor: pointer;
+  height: 30px;
+}
+.App{
+  position: relative;
+}
+.creater{
+  position: relative;
+}
+.bellicon .tooltip,.creater div{
+position: absolute;
+  color: white;
+  background-color: rgb(113, 113, 113);
+  padding: 10px 10px;
+  font-size: 15px;
+  bottom: -50px ;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.App div{
+  position: absolute;
+  color: white;
+  background-color: rgb(113, 113, 113);
+  padding: 10px 10px;
+  width: 95px;
+  font-size: 15px;
+  bottom: -50px ;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.bellicon:hover .tooltip,.creater:hover div,.App:hover div{
+  opacity: 1;
+}
+.my{
+  cursor: pointer;
+  height: 30px;
+  border-radius: 15px;
+}
